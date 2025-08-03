@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Circle Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation buttons -->
+        <button class="nav-btn prev-btn" id="prevBtn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+        
+        <button class="nav-btn next-btn" id="nextBtn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+
+
+
+        <!-- Information display area - outside the rotating icon -->
+        <div class="info-display">
+            <h3 id="info-title">Gather here</h3>
+            <p id="info-description">Our platform is currently in beta and invite-only. Request an invite now to receive a link to create your account.</p>
+            <button id="info-button">Join Gather</button>
+        </div>
+
+        <div class="center-wrapper">
+            <div class="icon">
+                <div class="imgBx" style="--i:1;" data-title="Whispers of Waterfalls" data-description="Discover cascading waterfalls hidden in serene landscapes, where nature's rhythm flows with peace, beauty, and endless timeless wonder." data-button="Join Gather">
+                    <img src="images/circle-image-a.png">
+                </div>
+                <div class="imgBx" style="--i:2;" data-title="Majestic Mountain Views" data-description="Soar above vast mountain ranges bathed in sunlight, inviting every traveler to pause, breathe deeply, and feel completely alive." data-button="Join Gather">
+                    <img src="images/circle-image-b.png">
+                </div>
+                <div class="imgBx" style="--i:3;" data-title="Sunset Forest Trails" data-description="Trails weave through golden trees under fiery skies, perfect for hikers chasing the last light of day’s quiet end." data-button="Join Gather">
+                    <img src="images/circle-image-c.png">
+                </div>
+                <div class="imgBx" style="--i:4;" data-title="Serenity in Nature" data-description="Find peace where the trees whisper and the earth holds you steady in its ancient and comforting green arms." data-button="Join Gather">
+                    <img src="images/circle-image-d.png">
+                </div>
+                <div class="imgBx" style="--i:5;" data-title="Golden Valley Light" data-description="Wander valleys where golden sunlight kisses treetops, guiding the way toward inspiration, calm, and natural balance." data-button="Join Gather">
+                    <img src="images/circle-image-e.png">
+                </div>
+                <div class="imgBx" style="--i:6;" data-title="Hidden Cave Escape" data-description="Enter a hidden cave where light dances, shadows play, and silence invites your thoughts to wander far and free." data-button="Join Gather">
+                    <img src="images/circle-image-f.png">
+                </div>
+                <div class="imgBx" style="--i:7;" data-title="Mystical River Bend" data-description="Meander past a quiet river curve, where mirrored skies reflect your soul’s yearning for exploration, peace, and quiet joy." data-button="Join Gather">
+                    <img src="images/circle-image-g.png">   
+                </div>
+                <div class="imgBx" style="--i:8;" data-title="Sunrise Over Cliffs" data-description="Wake early to catch the sun rise over mighty cliffs, painting the sky with fierce fire and peaceful awe." data-button="Join Gather">
+                    <img src="images/circle-image-h.png">
+                </div>
+                <div class="imgBx" style="--i:9;" data-title="Peaceful Woodland Walk" data-description="Listen to leaves crunch beneath your boots as you walk a trail of stillness, story, and ancient woodland secrets." data-button="Join Gather">
+                    <img src="images/circle-image-l.png">
+                </div>
+                <div class="imgBx" style="--i:10;" data-title="Emerald Lake Calm" data-description="Sit by a crystal lake that glows green with life, a perfect moment of reflection in nature’s tender grasp." data-button="Join Gather">
+                    <img src="images/circle-image-bb.png">
+                </div>
+                <div class="imgBx" style="--i:11;" data-title="Falling Mist Echoes" data-description="Mist from the waterfall cools your face as distant echoes call you deeper into this lush, living dreamscape." data-button="Join Gather">
+                    <img src="images/circle-image-gg.png">
+                </div>
+                <div class="imgBx" style="--i:12;" data-title="Crimson Sky Reflections" data-description="Watch the sky turn crimson as water reflects the day’s final kiss, holding space for peace and presence." data-button="Join Gather">
+                    <img src="images/circle-image-l.png">
+                </div>
+                <div class="imgBx" style="--i:13;" data-title="Nature’s Quiet Pulse" data-description="Nature beats with a soft pulse of wind, water, and whispering branches — reminding us to simply be and breathe." data-button="Join Gather">
+                    <img src="images/circle-image-m.png">
+                </div>
+                <div class="imgBx" style="--i:14;" data-title="Journey into Wild" data-description="Every step on this untamed path is a promise: the wild will always welcome your spirit back home." data-button="Join Gather">
+                    <img src="images/circle-image-n.png">
+                </div>
+                <div class="imgBx" style="--i:15;" data-title="Horizon Beyond Trees" data-description="Trees stand tall against the horizon, framing distant mountains, where dreams stretch far beyond what the eyes can see." data-button="Join Gather">
+                    <img src="images/circle-image-o.png">
+                </div>
+                <div class="imgBx" style="--i:16;" data-title="Cascading River Dreams" data-description="Follow the cascading river’s melody as it dances over rocks, guiding adventurers into a peaceful and powerful nature trance." data-button="Join Gather">
+                    <img src="images/circle-image-p.png">
+                </div>
+                <div class="imgBx" style="--i:17;" data-title="Alpine Glory Shine" data-description="Bathed in golden glow, alpine peaks shine like eternal beacons — symbols of courage, stillness, and silent celebration." data-button="Join Gather">
+                    <img src="images/circle-image-q.png">
+                </div>
+                <div class="imgBx" style="--i:18;" data-title="Pathway of Tranquility" data-description="Our platform is currently in beta and invite-only. Request an invite now to receive a link to create your account." data-button="Join Gather">
+                    <img src="images/circle-image-r.png">
+                </div>
+                <div class="imgBx" style="--i:19;" data-title="Wonders of Earth" data-description="Our platform is currently in beta and invite-only. Request an invite now to receive a link to create your account." data-button="Join Gather">
+                    <img src="images/circle-image-s.png">
+                </div>
+                <div class="imgBx" style="--i:20;" data-title="Forest Glade Silence" data-description="Our platform is currently in beta and invite-only. Request an invite now to receive a link to create your account." data-button="Join Gather">
+                    <img src="images/circle-image-t.png">
+                </div>
+                <div class="imgBx" style="--i:21;" data-title="Timeless Natural Grace" data-description="Our platform is currently in beta and invite-only. Request an invite now to receive a link to create your account." data-button="Join Gather">
+                    <img src="images/circle-image-t.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="bottom-dark-effect"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
