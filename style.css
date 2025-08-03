@@ -403,6 +403,10 @@ background: linear-gradient(to top, rgb(0 0 0 / 92%) 0%, rgb(0 0 0 / 0%) 100%);
   :root {
     --gallery-item-gap: 200px;
   }
+
+  body {
+    align-items: start;
+  }
   
   .container {
     height: 400px;
