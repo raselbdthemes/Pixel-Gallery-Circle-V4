@@ -188,6 +188,9 @@ class CircleGallery {
         const targetPosition = this.totalItems <= 10 ? 270 : this.options.activePosition;
         const targetAngle = -(this.currentIndex * itemAngle) + targetPosition;
         
+        // Debug: Log angle calculations
+        console.log(`Next - Index: ${this.currentIndex}, ItemAngle: ${itemAngle}, TargetPosition: ${targetPosition}, TargetAngle: ${targetAngle}, CurrentRotation: ${this.currentRotation}`);
+        
         // Calculate the shortest rotation path
         let rotationDifference = targetAngle - this.currentRotation;
         
@@ -198,6 +201,8 @@ class CircleGallery {
         // Apply the rotation smoothly
         this.currentRotation += rotationDifference;
         this.iconContainer.style.transform = `translate(-50%, -50%) rotate(${this.currentRotation}deg)`;
+        
+        console.log(`Next - RotationDifference: ${rotationDifference}, NewRotation: ${this.currentRotation}`);
         
         this.updateNavigationButtons();
     }
@@ -213,6 +218,9 @@ class CircleGallery {
         const targetPosition = this.totalItems <= 10 ? 270 : this.options.activePosition;
         const targetAngle = -(this.currentIndex * itemAngle) + targetPosition;
         
+        // Debug: Log angle calculations
+        console.log(`Prev - Index: ${this.currentIndex}, ItemAngle: ${itemAngle}, TargetPosition: ${targetPosition}, TargetAngle: ${targetAngle}, CurrentRotation: ${this.currentRotation}`);
+        
         // Calculate the shortest rotation path
         let rotationDifference = targetAngle - this.currentRotation;
         
@@ -223,6 +231,8 @@ class CircleGallery {
         // Apply the rotation smoothly
         this.currentRotation += rotationDifference;
         this.iconContainer.style.transform = `translate(-50%, -50%) rotate(${this.currentRotation}deg)`;
+        
+        console.log(`Prev - RotationDifference: ${rotationDifference}, NewRotation: ${this.currentRotation}`);
         
         this.updateNavigationButtons();
     }
